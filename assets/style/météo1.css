@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto";
+}
+
+header {
+    background-color: lightblue;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+#titre_meteo {
+    font-size: 35px;
+    font-weight: 800;
+    margin: 5px;
+    padding: 5px;
+}
+
+.date {
+    margin: 0 0 5px 15px;
+}
+
+.image {
+    margin-left: 15px;
+    display: flex;
+}
+
+#infos {
+    margin-left: 25vh;
+    font-size: 15px;
+}
+
+.info {
+    margin-bottom: 5px;
+}
+
+#meteo1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meteo1 {
+    margin: 25px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (min-width:750px) {
+    header {
+        display: none;
+    }
+
+    #meteo1 {
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width:1250px) {
+
+    hr {
+        display: none;
+    }
+
+    #titre_meteo {
+        font-size: 120px;
+    }
+
+    .date {
+        font-size: 40px;
+    }
+
+    img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .image {
+        font-size: 120px;
+    }
+
+    .image p {
+        font-size: 60px;
+        margin-top: 10px;
+    }
+
+    #infos {
+        font-size: 30px;
+        margin-left: 350px;
+    }
+
+    #meteo1 {
+        display: block;
+        text-align: center;
+    }
+
+    #ligne {
+        display: flex;
+    }
+}
